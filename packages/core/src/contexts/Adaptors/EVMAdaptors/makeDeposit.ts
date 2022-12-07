@@ -79,7 +79,7 @@ const makeDeposit =
       utils
         .hexZeroPad(utils.hexlify((recipient.length - 2) / 2), 32)
         .substr(2) + // len(recipientAddress) (32 bytes)
-      recipient.substr(2); // recipientAddress (?? bytes)
+      utils.hexZeroPad(utils.hexlify(recipient), 32).substr(2);
 
     try {
       const gasPriceCompatibility = await getPriceCompatibility(
