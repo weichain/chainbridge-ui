@@ -50,6 +50,7 @@ const App: React.FC<{}> = () => {
     }, {});
 
   return (
+    // @ts-ignore-next-line
     <ErrorBoundary
       fallback={({ error, componentStack, eventId, resetError }) => (
         <div>
