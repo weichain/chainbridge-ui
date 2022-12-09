@@ -42,11 +42,13 @@ export default function HomeNetworkConnectView({
             fullWidth
             variant="contained"
             sx={{
-              backgroundColor: "#262626",
+              fontFamily: 'Poppins',
+              backgroundColor: "#1065E5",
               color: "#ffffff",
-              ":hover": {
-                backgroundColor: "#262626",
-                opacity: 0.9,
+              borderRadius: '8px',
+              "&:hover": {
+                backgroundColor: "#00BFFF",
+                color: "#fff",
               },
             }}
             onClick={() => {
@@ -68,13 +70,13 @@ export default function HomeNetworkConnectView({
             <section className={classes.connected}>
               <div>
                 <Typography variant="body1">Home network</Typography>
-                <Typography
+                <Button
                   className={classes.changeButton}
-                  variant="body1"
+                  variant="text" color="primary"
                   onClick={() => setChangeNetworkOpen(true)}
                 >
                   Change
-                </Typography>
+                </Button>
               </div>
               <Typography
                 component="h5"

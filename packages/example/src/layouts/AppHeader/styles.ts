@@ -25,11 +25,13 @@ export const useStyles = makeStyles(
       left: {
         display: "flex",
         flexDirection: "row",
-        justifyContent: "flex-start",
+        justifyContent: "space-between",
+        width: '52%',
         alignItems: "center",
         [breakpoints.down("sm")]: {
           display: "flex",
           flexDirection: "column",
+          width: '100%'
         },
       },
       logo: {
@@ -86,6 +88,7 @@ export const useStyles = makeStyles(
       link: {
         marginLeft: 46,
         textDecoration: "none",
+        color: palette.additional["header"][2],
         [breakpoints.down("sm")]: {
           marginLeft: "unset",
         },
@@ -93,6 +96,9 @@ export const useStyles = makeStyles(
       linkTitle: {
         fontSize: 16,
       },
+      font: {
+        fontFamily: 'Poppins'
+      }
     });
   }
 );

@@ -49,8 +49,17 @@ export default function TransferCompleteBody({
             )}
           <Button
             size="small"
-            className={classes.button}
-            variant="outlined"
+            variant="contained"
+            sx={{
+              fontFamily: 'Poppins',
+              backgroundColor: "#1065E5",
+              color: "#ffffff",
+              borderRadius: '8px',
+              "&:hover": {
+                backgroundColor: "#00BFFF",
+                color: "#fff",
+              },
+            }}
             onClick={close}
           >
             Start new transfer

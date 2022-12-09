@@ -38,14 +38,6 @@ export default function HomeNetworkConnectView({
           <Button
             fullWidth
             variant="contained"
-            sx={{
-              backgroundColor: "#262626",
-              color: "#ffffff",
-              ":hover": {
-                backgroundColor: "#262626",
-                opacity: 0.9,
-              },
-            }}
             onClick={() => {
               setWalletType("select");
             }}
