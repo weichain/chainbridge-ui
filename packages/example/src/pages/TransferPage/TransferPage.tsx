@@ -232,11 +232,13 @@ const TransferPage = () => {
             fullWidth
             variant="contained"
             sx={{
-              backgroundColor: "#262626",
+              fontFamily: 'Poppins',
+              backgroundColor: "#1065E5",
               color: "#ffffff",
-              ":hover": {
-                backgroundColor: "#262626",
-                opacity: 0.9,
+              borderRadius: '8px',
+              "&:hover": {
+                backgroundColor: "#00BFFF",
+                color: "#fff",
               },
             }}
           >

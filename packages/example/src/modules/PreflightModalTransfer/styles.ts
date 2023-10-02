@@ -31,8 +31,6 @@ export const useStyles = makeStyles(({ constants, palette, zIndex }: ITheme) =>
       margin: `${constants.generalUnit * 2}px 0`,
     },
     startButton: {
-      backgroundColor: palette.additional["preflight"][1],
-      color: palette.additional["preflight"][2],
       marginBottom: constants.generalUnit * 2,
     },
     backdrop: {

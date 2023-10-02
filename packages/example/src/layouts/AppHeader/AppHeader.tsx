@@ -22,6 +22,7 @@ const AppHeader: React.FC<IAppHeader> = () => {
   const { __RUNTIME_CONFIG__ } = window;
 
   const indexerEnabled = "INDEXER_URL" in __RUNTIME_CONFIG__;
+  const font = 'Poppins';
 
   return (
     <header className={clsx(classes.root)}>
@@ -30,13 +31,13 @@ const AppHeader: React.FC<IAppHeader> = () => {
         {/* <div className={classes.logo}>
         </div> */}
         <div className={classes.mainTitle}>
-          <Typography variant="h5">ChainBridge Token Swap</Typography>
+          <Typography variant="h5"  sx={{fontFamily: font}}>OPN Bridge Token Swap</Typography>
         </div>
         <div className={classes.headerLinks}>
           {indexerEnabled ? (
             ROUTE_LINKS_HEADERS.map(({ route, label }) => (
               <NavLink to={route} className={classes.link} key={route}>
-                <Typography variant="h5" className={classes.linkTitle}>
+                <Typography sx={{fontFamily: font}} className={classes.linkTitle}>
                   {label}
                 </Typography>
               </NavLink>
@@ -56,7 +57,7 @@ const AppHeader: React.FC<IAppHeader> = () => {
       </div>
       <section className={classes.state}>
         {!isReady ? (
-          <Typography variant="h5">No wallet connected</Typography>
+          <Typography variant="h5" sx={{fontFamily: font}}>No wallet connected</Typography>
         ) : (
           <>
             <div className={classes.mainInfo}>
@@ -66,7 +67,7 @@ const AppHeader: React.FC<IAppHeader> = () => {
                   {address && shortenAddress(address)}
                 </Typography>
               </div>
-              <Typography variant="h5" className={classes.address}>
+              <Typography sx={{fontFamily: font}} variant="h5" className={classes.address}>
                 <div>
                   <span>connected to </span>
                   <span>

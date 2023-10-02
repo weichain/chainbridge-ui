@@ -4,6 +4,7 @@ export const lightTheme = createTheme({
   globalStyling: {
     body: {
       backgroundColor: "#F5F5F5",
+      fontFamily: "'Poppins', sans-serif"
     },
   },
   themeConfig: {
@@ -24,8 +25,8 @@ export const lightTheme = createTheme({
           3: "#BFBFBF", // border // gray6
         },
         preflight: {
-          1: "#85A5FF", // Button bg color
-          2: "#262626", // Button color
+          1: "#1065E5", // Button bg color
+          2: "#fff", // Button color
         },
         transactionModal: {
           1: "#597EF7", // border //geekblue5
@@ -34,19 +35,51 @@ export const lightTheme = createTheme({
         },
       },
     },
+    
     overrides: {
+      Typography: {
+        root: {
+          fontFamily: "'Poppins', sans-serif"
+        },
+        h1: {
+          fontFamily: "'Poppins', sans-serif"
+        },
+        h2: {
+          fontFamily: "'Poppins', sans-serif"
+        },
+        h3: {
+          fontFamily: "'Poppins', sans-serif"
+        },
+        h4: {
+          fontFamily: "'Poppins', sans-serif"
+        },
+        h5: {
+          fontFamily: "'Poppins', sans-serif"
+        },
+        button: {
+          fontFamily: "'Poppins', sans-serif"
+        },
+        body1: {
+          fontFamily: "'Poppins', sans-serif"
+        },
+        body2: {
+          fontFamily: "'Poppins', sans-serif"
+        },
+      },
       CheckboxInput: {
         root: {
           alignItems: "center",
-        },
+        
+        },  
       },
       Button: {
         variants: {
           primary: {
             root: {
-              backgroundColor: "#262626",
+              fontFamily: "'Poppins', sans-serif",
+              backgroundColor: "#1065E5",
               color: "#ffffff",
-              border: `1px solid #262626`,
+              borderRadius: '8px',
               "& svg": {
                 fill: "#ffffff",
               },
@@ -59,8 +92,8 @@ export const lightTheme = createTheme({
               },
             },
             hover: {
-              backgroundColor: "#ffffff",
-              color: "#262626",
+              backgroundColor: "#00BFFF",
+              color: "#fff",
               "& svg": {
                 fill: "#262626",
               },
@@ -75,9 +108,10 @@ export const lightTheme = createTheme({
           },
           outline: {
             root: {
+              fontFamily: "'Poppins', sans-serif",
               backgroundColor: "transparent",
               color: "#ffffff",
-              border: `1px solid #ffffff`,
+              borderRadius: '8px',
               "& svg": {
                 fill: "#ffffff",
               },

@@ -38,7 +38,7 @@ const PreflightModalTransfer: React.FC<IPreflightModalTransferProps> = ({
       size={430}
       open={open}
     >
-      <Typography variant="h3" component="h2">
+      <Typography variant="h3" component="h2" style={{textAlign: 'center'}}>
         Pre-flight check
       </Typography>
       <Typography className={classes.subtitle} variant="h5" component="p">
@@ -77,10 +77,10 @@ const PreflightModalTransfer: React.FC<IPreflightModalTransferProps> = ({
         <strong>{shortenAddress(receiver)}</strong> on{" "}
         <strong>{targetNetwork}</strong>.
       </Typography>
-      <Button onClick={start} className={classes.startButton} fullsize>
+      <Button onClick={start} variant="primary" className={classes.startButton} fullsize>
         Start Transfer
       </Button>
-      <Button onClick={close}>Back</Button>
+      <Button variant="outline" fullsize onClick={close}>Back</Button>
     </CustomDrawer>
   );
 };

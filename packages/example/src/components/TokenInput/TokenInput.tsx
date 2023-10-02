@@ -51,7 +51,7 @@ const TokenInput: React.FC<ITokenInput> = ({
               onClick={() => {
                 setValue(name, tokens[tokenSelectorKey].balance);
               }}
-              variant="outlined"
+              variant="text"
               type="button"
             >
               MAX

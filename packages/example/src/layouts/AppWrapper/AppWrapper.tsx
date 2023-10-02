@@ -84,6 +84,7 @@ const AppWrapper: React.FC<IAppWrapper> = ({
                     value={ROUTE_LINKS.Transfer}
                     to={ROUTE_LINKS.Transfer}
                     component={Link}
+                    sx={{fontFamily: 'Poppins'}}
                   />
                   {wrapTokenPage && (
                     <Tab
